@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MedievalPlantGuild.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MedievalPlantGuild.Controllers
 {
@@ -14,6 +15,25 @@ namespace MedievalPlantGuild.Controllers
         public PlantsController(MedievalPlantGuildContext db)
         {
             _db = db;
+        }
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] Plant plant)
+        {
+            plant.PlantId = id;
+            _db.Entry(plant).State = EntityState.Modified;
+            _db.SaveChanges();
+        }
+        [HttpGet("{id}")]
+        public ActionResult<Plant> Get(int id)
+        {
+            return _db.Plants.FirstOrDefault(entry => entry.PlantId == id);
+        }
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            var plantToDelete = _db.Plants.FirstOrDefault(entry => entry.PlantId == id);
+            _db.Plants.Remove(plantToDelete);
+            _db.SaveChanges();
         }
 
         // GET api/plants
