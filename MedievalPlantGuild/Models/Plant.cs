@@ -1,4 +1,5 @@
 namespace MedievalPlantGuild.Models
+
 {
     public class Plant
     {
@@ -9,5 +10,7 @@ namespace MedievalPlantGuild.Models
         public string Identification { get; set; }
         public string Uses { get; set; } 
         public bool Poisonous { get; set; }
+
     }
+
 }

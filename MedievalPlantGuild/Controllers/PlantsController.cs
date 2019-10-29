@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MedievalPlantGuild.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace MedievalPlantGuild.Controllers
 {
     [Route("api/[controller]")]
@@ -38,9 +39,46 @@ namespace MedievalPlantGuild.Controllers
 
         // GET api/plants
         [HttpGet]
-        public ActionResult<IEnumerable<Plant>> Get()
+        public ActionResult<IEnumerable<Plant>> Get(string commonname, string latinname, string habitat, string identification, string uses, bool poisonous )
         {
-            return _db.Plants.ToList();
+            var query = _db.Plants.AsQueryable();
+
+            if (commonname != null)
+            {
+                query = query.Where(entry => entry.CommonName.Contains(commonname));
+            }
+
+            if (latinname != null)
+            {
+                query = query.Where(entry => entry.LatinName.Contains(latinname));
+            }
+
+            if (habitat != null)
+            {
+                query = query.Where(entry => entry.Habitat.Contains(habitat));
+            }
+
+            if (identification != null)
+            {
+                query = query.Where(entry => entry.Identification.Contains(identification));
+            }
+
+            if (uses != null)
+            {
+                query = query.Where(entry => entry.Uses.Contains(uses));
+            }
+
+            if (poisonous == false)
+            {
+                query = query.Where(entry => entry.Poisonous == false);
+            }
+            else if (poisonous == true)
+            {
+                query = query.Where(entry => entry.Poisonous == true);
+            }
+
+        
+            return query.ToList();
         }
 
         // POST api/plants

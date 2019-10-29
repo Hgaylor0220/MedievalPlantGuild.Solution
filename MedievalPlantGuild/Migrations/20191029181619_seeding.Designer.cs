@@ -2,14 +2,16 @@
 using MedievalPlantGuild.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MedievalPlantGuild.Migrations
 {
     [DbContext(typeof(MedievalPlantGuildContext))]
-    partial class MedievalPlantGuildContextModelSnapshot : ModelSnapshot
+    [Migration("20191029181619_seeding")]
+    partial class seeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,7 +42,7 @@ namespace MedievalPlantGuild.Migrations
                     b.HasData(
                         new
                         {
-                            PlantId = 2,
+                            PlantId = 1,
                             CommonName = "American Ginseng",
                             Habitat = "American Ginseng can be found in much of the eastern and central United States and in part of southeastern Canada. It is found primarily in deciduous forests of the Appalachian and Ozark regions of the United States. American ginseng is found in full shade environments in these deciduous forests underneath hardwoods. Due to this very specialized growing environment and its demand in the commercial market it has started to reach an endangered status in some areas. It can be found throughout eastern Canada and the northeastern United States.",
                             Identification = "The aromatic root of American ginseng (Panax quinquefolius) resembles a small parsnip that forks as it matures. The plant grows 6 inches to 18 inches tall, usually bearing three leaves, each with three to five leaflets, 2 inches to 5 inches long.",
@@ -50,7 +52,7 @@ namespace MedievalPlantGuild.Migrations
                         },
                         new
                         {
-                            PlantId = 3,
+                            PlantId = 2,
                             CommonName = "Ginger",
                             Habitat = "From India, it was also carried by traders into the Middle East and the Mediterranean by around the 1st century CE. It was primarily grown in southern India and the Greater Sunda Islands during the spice trade, along with peppers, cloves, and numerous other spices.",
                             Identification = " It is a herbaceous perennial which grows annual pseudostems (false stems made of the rolled bases of leaves) about a meter tall bearing narrow leaf blades. The inflorescences bear pale yellow with purple flowers and arise directly from the rhizome on separate shoots",
@@ -60,17 +62,17 @@ namespace MedievalPlantGuild.Migrations
                         },
                         new
                         {
-                            PlantId = 4,
+                            PlantId = 3,
                             CommonName = "Turmeric",
                             Habitat = "Native to the Indian subcontinent and Southeast Asia.",
-                            Identification = "Turmeric is a perennial herbaceous plant that reaches up to 2 m (3 ft 3 in) tall. Highly branched, yellow to orange, cylindrical, aromatic rhizomes are found.",
+                            Identification = "Turmeric is a perennial herbaceous plant that reaches up to 1 m (3 ft 3 in) tall. Highly branched, yellow to orange, cylindrical, aromatic rhizomes are found.",
                             LatinName = "Curcuma longa",
                             Poisonous = false,
                             Uses = "Culinary, Dye, Indicator, Reduces Inflammation in the body, premote good digestion, premotes more energy. "
                         },
                         new
                         {
-                            PlantId = 5,
+                            PlantId = 4,
                             CommonName = "Burdock",
                             Habitat = "Native to Europe and Asia, several species have been widely introduced worldwide. Arctium species generally flower from July through to October. Burdock flowers provide essential pollen and nectar for honeybees around August when clover is on the wane and before the goldenrod starts to bloom.",
                             Identification = "Arctium species generally flower from July through to October. Burdock flowers provide essential pollen and nectar for honeybees around August when clover is on the wane and before the goldenrod starts to bloom.Plants of the genus Arctium have dark green leaves that can grow up to 70 cm (28 in) long. They are generally large, coarse and ovate, with the lower ones being heart-shaped. They are woolly underneath. The leafstalks are generally hollow. The prickly heads of these plants (burrs) are noted for easily catching on to fur and clothing. In England, some birdwatchers have reported that birds have become entangled in the burrs leading to a slow death, as they are unable to free themselves. Burdock's clinging properties, in addition to thus providing an excellent mechanism for seed dispersal, led to the invention of the hook and loop fastener.",
