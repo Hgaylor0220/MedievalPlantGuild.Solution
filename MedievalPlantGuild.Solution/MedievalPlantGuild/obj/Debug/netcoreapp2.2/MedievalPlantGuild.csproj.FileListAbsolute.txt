@@ -1,0 +1,14 @@
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/bin/Debug/netcoreapp2.2/MedievalPlantGuild.deps.json
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/bin/Debug/netcoreapp2.2/MedievalPlantGuild.runtimeconfig.json
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/bin/Debug/netcoreapp2.2/MedievalPlantGuild.runtimeconfig.dev.json
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/bin/Debug/netcoreapp2.2/MedievalPlantGuild.dll
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/bin/Debug/netcoreapp2.2/MedievalPlantGuild.pdb
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.csprojAssemblyReference.cache
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.csproj.CoreCompileInputs.cache
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.RazorAssemblyInfo.cache
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.RazorAssemblyInfo.cs
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.AssemblyInfoInputs.cache
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.AssemblyInfo.cs
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.RazorTargetAssemblyInfo.cache
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.dll
+/Users/Guest/Desktop/MedievalPlantGuild.Solution/MedievalPlantGuild/obj/Debug/netcoreapp2.2/MedievalPlantGuild.pdb
